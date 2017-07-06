@@ -747,9 +747,6 @@ Pace.start = (_options) ->
 if typeof exports is 'object'
   # CommonJS
   module.exports = Pace
-else if typeof define is 'function' and define.amd
-  # AMD
-  define ['pace'], -> Pace
 else
   # Global
   if options.startOnPageLoad

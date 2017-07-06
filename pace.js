@@ -924,10 +924,6 @@
 
   if (typeof exports === 'object') {
     module.exports = Pace;
-  } else if (typeof define === 'function' && define.amd) {
-    define(['pace'], function() {
-      return Pace;
-    });
   } else {
     if (options.startOnPageLoad) {
       Pace.start();
